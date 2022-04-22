@@ -34,7 +34,6 @@ h2 {
 }
 .social-links {
 	max-width: 180px;
-	/* border: solid yellowss; */
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
@@ -43,4 +42,25 @@ h2 {
 
 .about {
 	margin: 32px 0;
+}
+
+.project-card {
+	margin: 64px 0;
+}
+.project-card a {
+	text-decoration: none;
+}
+.project-card h3 {
+	margin: 0;
+}
+
+.project-card a:hover {
+	opacity: 0.6;
+}
+.project-card img {
+	width: 300px;
+}
+
+.project-card img:hover {
+	opacity: 0.6;
 }
