@@ -98,8 +98,6 @@ section {
 }
 
 .project-card {
-	/* border: 1px solid var(--color-blue); */
-	/* border-radius: 8px; */
 	padding: 16px;
 }
 .project-card a {
@@ -151,7 +149,6 @@ svg {
 
 .item-list {
 	position: relative;
-	/* border: solid; */
 }
 
 .item-list svg {
@@ -159,7 +156,6 @@ svg {
 	top: 32px;
 	right: 32px;
 	cursor: pointer;
-	/* display: block; */
 }
 
 body.light,
@@ -184,12 +180,6 @@ body.dark h1,
 body.dark h2 {
 	color: var(--color-blue);
 }
-/* 
-.tech-stack {
-	display: flex;
-	font-size: 1.5rem;
-	gap: 32px;
-} */
 
 @media screen and (min-width: 700px) {
 	.projects {
