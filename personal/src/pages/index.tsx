@@ -62,7 +62,7 @@ export default function Home() {
 					>
 						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-white">
 							<div className="w-full flex items-center justify-center">
-								<Image src={walter} width={"auto"} height={"auto"} alt="walter clipper"/>
+								<Image src={walter} width={300} height={150} alt="walter clipper"/>
 							</div>
 							<p className="underline  hover:decoration-dotted text-xl lg:text-2xl flex pt-4">
 								Walter Clippers
@@ -105,7 +105,7 @@ export default function Home() {
 					>
 						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-white">
 							<div className="w-full flex items-center justify-center">
-								<Image src={tesla} width={"auto"} height={"auto"} alt="telsa image"/>
+								<Image src={tesla} width={300} height={150} alt="telsa image"/>
 							</div>
 							<p className="underline  hover:decoration-dotted text-xl lg:text-2xl flex pt-4">
 								Tesla Dashboard Simulator
@@ -148,7 +148,7 @@ export default function Home() {
 					>
 						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-white">
 							<div className="w-full flex items-center justify-center">
-								<Image src={ekene} width={"auto"} height={"auto"} alt="ekene design"/>
+								<Image src={ekene} width={300} height={150} alt="ekene design"/>
 							</div>
 							<p className="underline  hover:decoration-dotted text-xl lg:text-2xl flex pt-4">
 								Ekene Designs Portfolio
