@@ -140,11 +140,11 @@ export default function Home() {
 						</div>
 					</a>
 					<a
-						href="https://walter-clippers.vercel.app/"
+						href="https://ekene-designs.netlify.app/"
 						className="flex gap-3 px-0 py-2 w-[325px] md:w-[350px] h-[400px]"
 						target="_blank"
 						rel="noreferrer"
-						data-splitbee-event="Click on Walter Clippers"
+						data-splitbee-event="Click on Ekene Designs"
 					>
 						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-white">
 							<div className="w-full flex items-center justify-center">
