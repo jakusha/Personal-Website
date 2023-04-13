@@ -27,7 +27,7 @@ export default function Home() {
 						<h1 className="font-lato flex text-center leading-[0.8] font-medium text-yellow-6 text-[16vw] md:text-[12vw] xl:text-[10vw] tracking-[-0.09em] -mt-[16px]">
 							Ebube Aaron
 						</h1>
-						<p className="text-lg md:text-2xl md:py-2 text-right font-semibold capitalize ">
+						<p className="text-lg md:text-2xl md:py-2 text-right font-semibold capitalize text-yellow-7">
 							Software developer
 						</p>
 					</div>

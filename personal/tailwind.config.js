@@ -32,6 +32,7 @@ module.exports = {
 				"black-5": "#111111",
 				"black-6": "#060100",
 				"yellow-6": "#F3C40F",
+				"yellow-7": "#b08e0c",
 			},
 		},
 	},
