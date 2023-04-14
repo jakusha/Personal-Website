@@ -43,7 +43,7 @@ export default function Home() {
 					About
 				</h2>
 				<p className="w-10/12 mx-auto max-w-2xl">
-					I am a Sotftware Developer, Involved in building client and
+					I am a Software Developer, involved in building client and
 					server web applications. I currently work with Typescript,
 					Postgresql, Express, Reactjs, Nodejs, Redux, Redux Toolkit.
 				</p>
