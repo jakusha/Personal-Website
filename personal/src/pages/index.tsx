@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<main className="bg-grey-1 bg-pattern1 ">
 			<div className="max-w-7xl mx-auto">
-				<nav className="text-base md:text-lg text-grey-2 pt-6 pl-4 w-max fixed top-0 right-4 z-10">
+				<nav className="text-base md:text-lg text-grey-2 w-max fixed top-8 right-4 z-10 animate-heading2">
 					<ul className="list-none border-2 border-black-6 capitalize flex gap-4 px-4 bg-grey-1">
 					<Link href={"#about"} className=" cursor-pointer"><li className="py-1" >about</li></Link>
 					<Link href={"#works"} className=" cursor-pointer">	<li className="border-x-2 border-black-6 px-2 py-1">
@@ -21,19 +21,20 @@ export default function Home() {
 			</div>
 			<div className="max-w-7xl mx-auto">
 				<header className="h-screen flex flex-col items-center justify-center relative">
-					<div className="relative">
-						<h1 className="font-lato flex text-center leading-[0.8] font-medium text-grey-2 text-[16vw] md:text-[12vw] xl:text-[10vw] tracking-[-0.09em] -mt-[16px]">
+					<div className="relative animate-heading">
+						<h1 className="font-lato flex text-center  font-medium text-grey-2 text-[16vw] md:text-[12vw] xl:text-[10vw] tracking-[-0.09em] -mt-[16px] animate-heading3">
 							Ebube Aaron
 						</h1>
-						<p className="text-lg md:text-2xl md:py-2 text-right font-semibold capitalize text-yellow-7">
+						<p className="text-lg md:text-2xl -mt-4 md:py-2 text-right font-semibold capitalize text-yellow-7 animate-heading2">
 							Software developer
 						</p>
 						
 					</div>
-					
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 absolute bottom-4 text-white animate-bounce">
+					<div className="absolute bottom-4 animate-heading2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12  text-white animate-bounce">
   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
 </svg>
+</div>
 
 				</header>
 			</div>

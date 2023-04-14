@@ -22,6 +22,9 @@ module.exports = {
 			},
 			animation: {
 				jump: "jump 2s cubic-bezier(0.5, 0, 0.5, 1) 2",
+				heading: "heading 4s both",
+				heading2: "heading2 4s both",
+				heading3: "texty 4s both",
 			},
 			colors: {
 				"grey-1": "#111111",
@@ -50,6 +53,30 @@ module.exports = {
 					},
 					"100%": {
 						transform: "trnaslateY(0)",
+					},
+				},
+				heading: {
+					"from, 50%": {
+						transform: "translateY(-50%) scale(1.25)",
+					},
+					to: {
+						transform: "none",
+					},
+				},
+				heading2: {
+					"from, 50%": {
+						opacity: 0,
+					},
+					to: {
+						opacity: 1,
+					},
+				},
+				texty: {
+					from: {
+						clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
+					},
+					"50%, to": {
+						clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 					},
 				},
 			},
