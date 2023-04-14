@@ -20,6 +20,9 @@ module.exports = {
 			height: {
 				half: "80vh",
 			},
+			animation: {
+				jump: "jump 2s cubic-bezier(0.5, 0, 0.5, 1) 2",
+			},
 			colors: {
 				"grey-1": "#111111",
 				"grey-2": "#BFBFBF",
@@ -33,6 +36,22 @@ module.exports = {
 				"black-6": "#060100",
 				"yellow-6": "#F3C40F",
 				"yellow-7": "#b08e0c",
+			},
+			keyframes: {
+				jump: {
+					"0%": {
+						transform: "translateY(0)",
+					},
+					"30%": {
+						transform: "translateY(-100px)",
+					},
+					"50%": {
+						transform: "trnaslateY(0)",
+					},
+					"100%": {
+						transform: "trnaslateY(0)",
+					},
+				},
 			},
 		},
 	},
