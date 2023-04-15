@@ -55,7 +55,7 @@ export default function Home() {
 					Selected Works
 				</h2>
 
-				<div className="flex flex-col md:flex-row md:px-4 gap-2 items-center justify-center flex-wrap ">
+				<div className="flex flex-col md:flex-row md:px-4 gap-6 items-center justify-center flex-wrap ">
 					
 					
 						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-grey-2 w-[325px] md:w-[350px]  h-[425px]  shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
