@@ -22,7 +22,7 @@ export default function Home() {
 	return (
 		<main className="bg-grey-1 bg-pattern1 ">
 			<div className="max-w-7xl mx-auto">
-				<div className="fixed top-8 left-4 text-3xl md:text-5xl text-yellow-6 cursor-pointer z-10 w-14"  onClick={()=> scrollToSection(elementRef4)}>EA.</div>
+				<div className="fixed top-8 left-4 text-3xl md:text-5xl text-yellow-6 cursor-pointer z-10 w-14 animate-heading2"  onClick={()=> scrollToSection(elementRef4)}>EA.</div>
 				<nav className="text-base md:text-lg text-grey-2 w-max fixed top-8 right-4 z-10 animate-heading2">
 					
 					<ul className="list-none border-2 border-black-6 capitalize flex gap-4 px-4 bg-grey-1">
