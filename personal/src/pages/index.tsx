@@ -2,25 +2,40 @@ import Image from "next/image";
 import ekene from "../../public/Ekene.png";
 import walter from "../../public/walter-image.jpeg";
 import tesla from "../../public/tesla-image.png";
-import Link from "next/link";
+import { useRef } from "react";
 
 
 export default function Home() {
+
+	let elementRef1 = useRef<HTMLElement | null>(null)
+	let elementRef2 = useRef<HTMLElement | null>(null)
+	let elementRef3 = useRef<HTMLElement | null>(null)
+	let elementRef4 = useRef<HTMLElement | null>(null)
+
+
+	const scrollToSection= (elementRef: any) => {
+		window.scrollTo({
+			top: elementRef.current.offsetTop - 25, behavior: "smooth" 
+		})
+	}
+
 	return (
 		<main className="bg-grey-1 bg-pattern1 ">
 			<div className="max-w-7xl mx-auto">
+				<div className="fixed top-8 left-4 text-3xl md:text-5xl text-yellow-6 cursor-pointer z-10 w-14"  onClick={()=> scrollToSection(elementRef4)}>EA.</div>
 				<nav className="text-base md:text-lg text-grey-2 w-max fixed top-8 right-4 z-10 animate-heading2">
+					
 					<ul className="list-none border-2 border-black-6 capitalize flex gap-4 px-4 bg-grey-1">
-					<Link href={"#about"} className=" cursor-pointer"><li className="py-1" >about</li></Link>
-					<Link href={"#works"} className=" cursor-pointer">	<li className="border-x-2 border-black-6 px-2 py-1">
+					<li className="py-1 cursor-pointer" onClick={()=> scrollToSection(elementRef1)}>about</li>
+					<li className="border-x-2 border-black-6 px-2 py-1 cursor-pointer"  onClick={()=> scrollToSection(elementRef2)}>
 							Works
-						</li></Link>
-						<Link href={"#contact"} className=" cursor-pointer"><li className="py-1">Contact</li> </Link>
+						</li>
+						<li className="py-1 cursor-pointer"  onClick={()=> scrollToSection(elementRef3)}>Contact</li> 
 					</ul>
 				</nav>
 			</div>
-			<div className="max-w-7xl mx-auto">
-				<header className="h-screen flex flex-col items-center justify-center relative">
+			<div className="max-w-7xl mx-auto" >
+				<header className="h-screen flex flex-col items-center justify-center relative" ref={elementRef4}>
 					<div className="relative animate-heading">
 						<h1 className="font-lato flex text-center  font-medium text-grey-2 text-[16vw] md:text-[12vw] xl:text-[10vw] tracking-[-0.09em] -mt-[16px] animate-heading3">
 							Ebube Aaron
@@ -39,7 +54,7 @@ export default function Home() {
 				</header>
 			</div>
 
-			<section className="bg-black-6 text-white text-xl lg:text-2xl pt-10 pb-20" id="about">
+			<section className="bg-black-6 text-white text-xl lg:text-2xl pt-10 pb-20" id="about" ref={elementRef1}>
 				<h2 className=" text-center text-yellow-6 mb-4 text-3xl md:text-4xl font-semibold">
 					About
 				</h2>
@@ -50,7 +65,7 @@ export default function Home() {
 				</p>
 			</section>
 
-			<section className="py-10 lg:pb-16" id="works" >
+			<section className="py-10 lg:pb-16" id="works" ref={elementRef2}>
 			<h2 className=" text-center text-yellow-6 mb-4 text-3xl md:text-4xl font-semibold">
 					Selected Works
 				</h2>
@@ -58,7 +73,7 @@ export default function Home() {
 				<div className="flex flex-col md:flex-row md:px-4 gap-6 items-center justify-center flex-wrap ">
 					
 					
-						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-grey-2 w-[325px] md:w-[350px]  h-[425px]  shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-grey-2 w-[325px]   h-[425px]  shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
 							<a href="https://walter-clippers.vercel.app/" className="w-full block cursor-pointer">
 								<Image src={walter} width={300} height={150} alt="walter clipper" />
 							</a>
@@ -113,7 +128,7 @@ export default function Home() {
 						</div>
 					
 
-						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-grey-2 w-[325px] md:w-[350px] h-[425px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-grey-2 w-[325px]  h-[425px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
 							<a href="https://tesla-dashboard-five.vercel.app/" className="w-full block cursor-pointer">
 								<Image src={tesla} width={300} height={150} alt="telsa image"/>
 							</a>
@@ -167,7 +182,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-grey-2 w-[325px] md:w-[350px] h-[425px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+						<div className="flex flex-col gap-0.5 bg-black-5 p-4 py-6 text-grey-2 w-[325px]  h-[425px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
 							<a href="https://ekene-designs.netlify.app/" className="w-full block cursor-pointer">
 							<Image src={ekene} width={300} height={150} alt="ekene design"/>
 							</a>
@@ -212,7 +227,7 @@ export default function Home() {
 				
 			</section>
 
-			<section className="bg-black-6 text-white text-2xl md:text-3xl pt-10 pb-10" id="contact">
+			<section className="bg-black-6 text-white text-2xl md:text-3xl pt-10 pb-10" id="contact" ref={elementRef3}>
 			<h2 className=" text-center text-yellow-6 mb-4 text-3xl md:text-4xl font-semibold">
 					Contact
 				</h2>
